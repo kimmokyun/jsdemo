@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+#gallery h1{
+    text-align: center;
+}
+#gallery img{
+    border: 1px solid #666;
+
+}
+#gallery #photo{
+    text-align: center;
+}
+#gallery ul {
+    width: 800px;
+    margin: 0 auto;
+    background-color: aqua;
+    }
+
+    #gallery ul li{
+        width: 100px;
+        float: left;
+        text-align: center;
+    }
+
+    #gallery div#photo_list{
+        width:300px;
+        margin: 10px auto;
+    }
+    #gallery.btn_wrap{
+        clear: both;
+        text-align: center;
+    }
+    #gallery.btn_wrap a{
+        font-weight: bolder;
+        font-size: 25px;
+
+    }
