@@ -1,0 +1,228 @@
+html, 
+body{
+    margin:0;
+    padding: 0;
+}
+body {
+    color:#3333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li {
+    float:left;
+}
+
+/* 곰통 CSS */
+.ibx{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.pbx{
+    float:left;
+    height:100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+/*==================A header===============*/
+.top{
+    position: relative;
+    height: 100px;
+    z-index: 999;
+}
+
+.top1{
+    width:200px;
+}
+.top2{
+    width:100px;
+}
+.logo{
+    margin-left: -10px;
+}
+
+/*메뉴*/
+.gnb{
+    width:800px;
+    height:50px;
+    background-color: rgb(117,188,255);
+margin-top:  40px;
+margin-left: 190px;
+}
+.gnb::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:100px;
+    left:0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(218,238,255,0.9);
+    transition: height 0.4;
+}
+
+.gnb li{
+    position: relative;
+    width:200px;
+    /*border: 1px solid black;*/
+}
+.gnb a{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+/* 서브 메뉴 */
+.gnb ol {
+    height: 0;
+    overflow: hidden;
+}
+
+.gnb:hover ol, 
+.gnb:hover::before{
+    height: 170px;
+}
+
+/* 하이라이트 설정*/
+/*메인, 서브 메뉴 */
+
+.gnb li:hover a{
+    color: #fff;
+}
+
+/*서브메뉴에만*/
+.gnb ol li:hover a{
+    background-color: black;
+}
+/* =================슬라이딩====================*/
+.ban{
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide{
+    position: relative;
+    top:0;
+}
+
+/* 공지사항 및 갤러리 */
+
+.cont > .pbx{
+    width:400px;
+    /* background-color: yellow; */
+}
+/* 탭 메뉴 */
+.tm{
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+
+}
+.tm li a{
+    display: block;
+    width:100px;
+    height: 100px;
+    text-align: center;
+ line-height: 40px;
+ background-color: rgb(94,169,255);   
+}
+
+.tm li.on a{
+    background-color: #fff;
+}
+
+/* 탭 내용 */
+.tc {
+    height: 138px;
+    background-color: #fff;
+}
+.tc>li{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.tc>li.on{
+    display: block;
+}
+.gong{
+    padding-top: 9px;
+    padding-left: 7px;
+}
+
+.gong li{
+    line-height: 24px;
+    /* border: 1px solid black; */
+}
+
+.gong a{
+    display: inline-block;
+width: 270px;   
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.gong span{
+    float:right;
+    padding-right: 5px;
+}
+
+.gal li {
+    margin: 18px 12px;
+}
+.gal img{
+    width: 100px;
+    border: 1px solid #777;
+}
+.im {
+    width: 100%;
+    height: 100%;
+}
+/*=================================*/
+/* Footer */
+
+.info1 {
+    width: 200px;
+}
+.inof2 {
+    width: 800px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+}
+.info3 {
+    width: 200px;
+}
+/* /////// */
+/* 팝업창 */
+
+.pop{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 350px;
+    padding: 15px;
+    z-index: 999;
+    background-color: rgb(186,217,64);
+    border:3px solid #888;
+
+}
+.bbx {
+    text-align: right;
+}
